@@ -5,7 +5,7 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
 // Setup MongoDb backing database
-const MongoClient = require('mongodb').MongoClient
+// const MongoClient = require('mongodb').MongoClient
 // MongoDB credentials
 // const username = encodeURIComponent("uloe_user");
 // const password = encodeURIComponent("ILoveTheList");
