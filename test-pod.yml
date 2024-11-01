@@ -5,7 +5,7 @@ metadata:
 spec:
   containers:
   - name: uloe-server
-    image: <YOUR_DOCKER_HUB_USERNAME>/uloe-server:0.0.1
+    image: wasyst/uloe-server:0.0.1
     ports:
     - name: web
       containerPort: 3001
