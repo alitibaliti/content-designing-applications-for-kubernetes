@@ -21,4 +21,5 @@ RUN yarn global add serve
 
 
 EXPOSE 5000
+EXPOSE 3000
 CMD react-env -d build -- serve build
