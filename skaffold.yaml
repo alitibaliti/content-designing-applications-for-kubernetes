@@ -1,0 +1,18 @@
+apiVersion: skaffold/v4beta11
+kind: Config
+metadata:
+  name: content-designing-applications-for-kubernetes
+build:
+  artifacts:
+    - image: linuxacademycontent/uloe-mongodb
+      docker:
+        dockerfile: Dockerfile
+    - image: wasyst/uloe-server
+      buildpacks:
+        builder: gcr.io/buildpacks/builder:v1
+manifests:
+  rawYaml:
+    - k8s-uloe-mongodb.yml
+    - test-pod.yml
+    - uloe-config.yml
+    - uloe-mongodb.yml

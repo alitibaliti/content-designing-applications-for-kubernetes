@@ -1,0 +1,11 @@
+# From https://mcvidanagama.medium.com/set-up-a-multi-node-kubernetes-cluster-locally-using-kind-eafd46dd63e5
+# Create cluster with:
+# kind create cluster --name k8s-playground --config kind-cluster-1.yaml
+
+# three node (two workers) cluster config
+kind: Cluster
+apiVersion: kind.x-k8s.io/v1alpha4
+nodes:
+  - role: control-plane
+  - role: worker
+  - role: worker
